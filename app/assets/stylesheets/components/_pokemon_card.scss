@@ -1,0 +1,18 @@
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  border: 12px solid #f7d25e;
+}
+
+h2 {
+  size: smaller;
+}
+
+img {
+  width: 100%;
+}

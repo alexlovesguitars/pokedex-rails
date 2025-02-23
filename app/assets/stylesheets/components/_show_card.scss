@@ -1,0 +1,13 @@
+.show-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+
+  img {
+    width: 125%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

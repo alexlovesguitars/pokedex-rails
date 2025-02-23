@@ -1,0 +1,15 @@
+<div class="container">
+  <%= link_to "< All Trainers", trainers_path %>
+  <div class="header">
+    <h1>Create your trainer!</h1>
+  </div>
+    <div>
+      <h2>Do you dare to catch this Pokémon?</h2>
+      <%= simple_form_for @trainer do |f| %>
+        <%= f.input :name, label: "What's your namek?" %>
+        <%= f.input :age, label: "How old are you?" %>
+        <%= f.input :photo %>
+        <%= f.submit "Create!", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+</div>

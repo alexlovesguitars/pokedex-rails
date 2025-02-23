@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
   root to: "pokemons#index"
+  resources :pokemons, only: [:show, :index] do
+    resources :pokeballs, only: [:create]
+  end
+
+  resources :trainers, only: [:index, :show, :new, :create]
+  resources :pokeballs, only: [:show, :destroy]
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
